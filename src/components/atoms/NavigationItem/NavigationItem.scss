@@ -1,13 +1,20 @@
 @use '../../../globalStyles/functions' as *;
 @use '../../../globalStyles/variables' as *;
+@use '../../../globalStyles/mixins' as *;
 
 .navigation-item{
     list-style: none;
-    padding: toRem(8);
+    padding: toRem(10) 0;
     width: fit-content;
+
+    @include lgMinBreakPoint {
+        margin: toRem(8) toRem(16);
+    }
 
     &--selected{
         color: $lightBlue;
-        border-bottom: 2px solid $lightBlue;
+        border-bottom: toRem(4) solid $lightBlue;
+        padding-bottom: toRem(3);
+        margin-bottom: toRem(7);
     }
 }

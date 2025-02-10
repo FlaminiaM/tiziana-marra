@@ -3,6 +3,7 @@ import React from 'react';
 import NavigationItem from '../../atoms/NavigationItem/NavigationItem';
 import Hamburger from 'hamburger-react';
 import Logo from '../../atoms/Logo/Logo';
+import Button from '../../atoms/Button/Button';
 
 
 function NavigationMenu({}) {
@@ -14,9 +15,12 @@ function NavigationMenu({}) {
                 <Logo />
             </div>
             <div className={isOpen ? 'navigation-menu navigation-menu--open' : 'navigation-menu'}>
-                    <NavigationItem text='home' isSelected={true}/>
-                    <NavigationItem text='trattamenti'/>
+                <NavigationItem text='Home' isSelected={true}/>
+                <NavigationItem text='Trattamenti'/>
+                <NavigationItem text='Chi sono'/>
+                <NavigationItem text='Dove trovarmi'/>
             </div>
+            <Button type="primary" text='Prendi appuntamento' />
        </div>
     )
 
