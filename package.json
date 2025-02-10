@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://flaminiam.github.io/",
+  "homepage": "https://flaminiam.github.io/tiziana-marra/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
