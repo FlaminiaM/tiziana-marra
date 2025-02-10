@@ -1,6 +1,9 @@
 @use '../../../globalStyles/functions' as *;
 
 .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
         max-width: toRem(180);
     }
