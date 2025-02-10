@@ -1,0 +1,13 @@
+@use '../../../globalStyles/functions' as *;
+@use '../../../globalStyles/variables' as *;
+
+.navigation-item{
+    list-style: none;
+    padding: toRem(8);
+    width: fit-content;
+
+    &--selected{
+        color: $lightBlue;
+        border-bottom: 2px solid $lightBlue;
+    }
+}

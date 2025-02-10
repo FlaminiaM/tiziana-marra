@@ -1,0 +1,36 @@
+@use '../../../globalStyles/mixins' as *;
+
+.navigation{
+    &-wrapper{
+        .hamburger-react{
+            @include mdMinBreakPoint {
+                display: none;
+            }
+        }
+    }
+    &-container{
+        display: flex;
+        box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+        padding: 8px 16px;
+        justify-content: space-between;
+        width: 100vw;
+        align-items: center;
+    }
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+		transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        &--open{
+            max-height: 500px;
+        }
+
+        @include mdMinBreakPoint {
+            flex-direction: row;
+            max-height: unset;
+        }
+    }
+}
+  
+

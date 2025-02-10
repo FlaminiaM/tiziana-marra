@@ -9,10 +9,14 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "hamburger-react": "^2.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -27,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
+    "sass-embedded": "^1.83.4",
     "vite": "^6.1.0"
   }
 }

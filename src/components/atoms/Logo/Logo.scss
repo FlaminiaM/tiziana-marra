@@ -1,0 +1,7 @@
+@use '../../../globalStyles/functions' as *;
+
+.logo{
+    img{
+        max-width: toRem(180);
+    }
+}

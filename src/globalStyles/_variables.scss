@@ -1,0 +1,20 @@
+@use './functions' as *;
+//Font
+$primary-font: "Poppins", serif;
+
+//Colors
+$blue: #003A5D;
+$blue90Opacity: rgba(0, 58, 92, 0.90);
+$lightBlue: #267CC0;
+$white: #FFFFFF;
+$black: #000000;
+
+
+
+// Screen sizes
+$screen-sm: toRem(576);
+$screen-md: toRem(768);
+$screen-lg: toRem(992);
+$screen-xl: toRem(1280);
+$screen-xxl: toRem(1300);
+$screen-full: toRem(1400);

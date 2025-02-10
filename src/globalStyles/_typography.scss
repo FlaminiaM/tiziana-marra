@@ -1,0 +1,71 @@
+@use './functions' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+body{
+    font-family: $primary-font;
+    font-weight: 400;
+    line-height: toRem(20);
+    font-size: toRem(14);
+
+    @include mdMinBreakPoint {
+        font-size: toRem(16);
+    }
+}
+
+.body-bold{
+    font-family: $primary-font;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.body-semibold{
+    font-family: $primary-font;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    font-size: toRem(27);
+    margin: 0;
+    line-height: toRem(29);
+    letter-spacing: 0px;
+
+    @include mdMinBreakPoint {
+        font-size: toRem(64);
+        line-height: toRem(55);
+    }
+}
+
+h2{
+    font-size: toRem(20);
+    margin: 0;
+    line-height: toRem(31);
+    letter-spacing: 0px;
+
+    @include mdMinBreakPoint {
+        font-size: toRem(54);
+    }
+}
+
+h3{
+    font-size: toRem(18);
+    margin: 0;
+    line-height: toRem(20);
+    letter-spacing: 0px;
+
+    @include mdMinBreakPoint {
+        font-size: toRem(24);
+    }
+}
+
+h4{
+    font-size: toRem(16);
+    margin: 0;
+    line-height: toRem(20);
+    letter-spacing: 0px;
+
+    @include mdMinBreakPoint {
+        font-size: toRem(18);
+    }
+}
