@@ -5,6 +5,7 @@
     &-wrapper{
         display: block;
         box-shadow: none;
+        position: relative;
         @include lgMinBreakPoint {
             display: flex;
             align-items: center;
@@ -36,24 +37,35 @@
         }
     }
     &-menu{
-        display: flex;
-        flex-direction: column;
         max-height: 0;
-		transition: all 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
         overflow: hidden;
-        margin: toRem(16);
+        position: absolute;
+        width: 100vw;
+        background-color: white;
 
         @include lgMinBreakPoint {
-            margin: 0;
+            max-height: unset;
+            position: unset;
+            width: auto;
         }
+
+        &-inner{
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+
+            @include lgMinBreakPoint {
+                padding: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
 
         &--open{
             max-height: toRem(500);
-        }
-
-        @include lgMinBreakPoint {
-            flex-direction: row;
-            max-height: unset;
         }
     }
 }

@@ -1,0 +1,75 @@
+@use '../../../globalStyles/mixins' as *;
+@use '../../../globalStyles/functions' as *;
+@use '../../../globalStyles/variables' as *;
+.hero-banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+
+    &-wrapper{
+        position: relative;
+    }
+
+    &--desktop{
+        display: none;
+        background-position: bottom;
+        @include lgMinBreakPoint {
+            display: block;
+        }
+    }
+
+    &--mobile{
+        display: block;
+        background-position: center;
+        @include mdMinBreakPoint {
+            background-position: top;
+        }
+        @include lgMinBreakPoint {
+            display: none;
+        }
+    }
+
+    &-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: toRem(48);
+        text-align: center;
+
+        @include lgMinBreakPoint {
+            text-align: left;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        h1{
+            color: $blue;
+            max-width: unset;
+            @include lgMinBreakPoint {
+                max-width: 60%;
+            }
+           
+        }
+
+        h2{
+            color: $lightBlue;
+            margin-top: toRem(16);
+            margin-bottom: toRem(16);
+
+            @include mdMinBreakPoint {
+                margin-top: toRem(36);
+                margin-bottom: toRem(24);
+            }
+        }
+
+        &-ctas{
+            margin-top: toRem(16);
+
+            @include lgMinBreakPoint {
+                margin-top: toRem(24);
+            }
+        }
+    }
+}
+
