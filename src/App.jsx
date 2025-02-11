@@ -3,6 +3,7 @@ import Title from './components/Title.jsx'
 import './App.scss'
 import Button from './components/atoms/Button/Button.jsx'
 import NavigationMenu from './components/molecules/NavigationMenu/NavigationMenu.jsx'
+import HeroBanner from './components/molecules/HeroBanner/HeroBanner.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
      {/* <Title text="helloooooo"/> */}
 
       <NavigationMenu />
+      <HeroBanner />
 
 {/* 
     

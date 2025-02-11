@@ -15,10 +15,12 @@ function NavigationMenu({}) {
                 <Logo />
             </div>
             <div className={isOpen ? 'navigation-menu navigation-menu--open' : 'navigation-menu'}>
-                <NavigationItem text='Home' isSelected={true}/>
-                <NavigationItem text='Trattamenti'/>
-                <NavigationItem text='Chi sono'/>
-                <NavigationItem text='Dove trovarmi'/>
+                <div className='navigation-menu-inner'>
+                    <NavigationItem text='Home' isSelected={true}/>
+                    <NavigationItem text='Trattamenti'/>
+                    <NavigationItem text='Chi sono'/>
+                    <NavigationItem text='Dove trovarmi'/>
+                </div>
             </div>
             <Button type="primary" text='Prendi appuntamento' />
        </div>
