@@ -4,6 +4,7 @@ import Button from './components/atoms/Button/Button.jsx'
 import NavigationMenu from './components/molecules/NavigationMenu/NavigationMenu.jsx'
 import HeroBanner from './components/molecules/HeroBanner/HeroBanner.jsx'
 import Trattamenti from './components/pages/Trattamenti/Trattamenti.jsx'
+import AboutMe from './components/pages/AboutMe/AboutMe.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <NavigationMenu />
       <HeroBanner />
       <Trattamenti />
+      <AboutMe />
 {/* 
     
       <Button type='primary' text='Scopri come posso aiutarti'/>
