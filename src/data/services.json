@@ -1,0 +1,38 @@
+[
+    {
+        "id": "laserterapia",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "title":  "Laser terapia",
+        "text": "Riduce dolore e infiammazione, stimolando la guarigione dei tessuti. È usata per trattare patologie muscolari, tendinee e articolari."
+    },
+    {
+        "id": "massaggi",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "title":  "Massaggi",
+        "text": "Utilizzati per alleviare dolore, ridurre tensioni muscolari, migliorare la circolazione e favorire il recupero da traumi e patologie articolari."
+    },
+    {
+        "id": "tecarTerapia",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "title":  "Tecar Terapia",
+        "text": "Stimola la guarigione dei tessuti attraverso energia elettromagnetica, riducendo dolore, infiammazione e accelerando il recupero muscolare."
+    },
+    {
+        "id": "riabilitazione",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "title":  "Riabilitazione",
+        "text": "Processo di recupero della funzionalita’ motoria e delal qualita’ di vita attraverso terapie mirate, esercizi e tecniche manuali."
+    },
+    {
+        "id": "pancafit",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "title":  "Pancafit",
+        "text": "Strumento per il riequilibrio posturale globale che favorisce l’allungamento muscolare e il rilassamento delle tensioni"
+    },
+    {
+        "id": "ultrasuoni",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "title":  "Ultrasuoni",
+        "text": "Gli ultrasuoni usano onde sonore per ridurre dolore, infiammazione e favorire la rigenerazione dei tessuti in patologie muscolari e articolari."
+    }
+]

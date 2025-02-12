@@ -1,0 +1,8 @@
+@use '../../../globalStyles/variables' as *;
+@use '../../../globalStyles/mixins' as *;
+@use '../../../globalStyles/functions' as *;
+
+.trattamenti{
+    background-color: $blue;
+    padding: toRem(16);
+}
