@@ -1,0 +1,24 @@
+@use '../../../globalStyles/variables' as *;
+@use '../../../globalStyles/mixins' as *;
+@use '../../../globalStyles/functions' as *;
+.section-title{
+    text-align: center;
+    margin-bottom: toRem(16);
+    margin-top: toRem(8);
+    font-weight: 500;
+
+    @include mdMinBreakPoint {
+        font-size: toRem(36);
+        text-align: left;
+        margin-bottom: toRem(32);
+    }
+
+    &--white{
+        color: white;
+    }
+
+
+    &--blue{
+        color: $blue;
+    }
+}

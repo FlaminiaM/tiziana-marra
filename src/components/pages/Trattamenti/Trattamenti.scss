@@ -5,4 +5,8 @@
 .trattamenti{
     background-color: $blue;
     padding: toRem(16);
+
+    @include mdMinBreakPoint {
+        padding: toRem(32);
+    }
 }

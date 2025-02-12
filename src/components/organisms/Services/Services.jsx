@@ -12,7 +12,6 @@ function Services() {
     console.log("services", services)
     return (
         <div className='services'>
-            <h2>Trattamenti</h2>
             <Swiper
                 modules={[Navigation, Pagination]}
                 spaceBetween={10}
