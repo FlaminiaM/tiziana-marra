@@ -1,20 +1,19 @@
 import { useState } from 'react'
-import Title from './components/Title.jsx'
 import './App.scss'
 import Button from './components/atoms/Button/Button.jsx'
 import NavigationMenu from './components/molecules/NavigationMenu/NavigationMenu.jsx'
 import HeroBanner from './components/molecules/HeroBanner/HeroBanner.jsx'
+import Trattamenti from './components/pages/Trattamenti/Trattamenti.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     {/* <Title text="helloooooo"/> */}
 
       <NavigationMenu />
       <HeroBanner />
-
+      <Trattamenti />
 {/* 
     
       <Button type='primary' text='Scopri come posso aiutarti'/>

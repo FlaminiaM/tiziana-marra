@@ -1,0 +1,86 @@
+@use '../../../globalStyles/functions' as *;
+@use '../../../globalStyles/mixins' as *;
+.services{
+    padding: toRem(16);
+    h2{
+        color: white;
+        text-align: center;
+        margin-bottom: toRem(16);
+        margin-top: toRem(8);
+        font-weight: 500;
+
+        @include mdMinBreakPoint {
+            font-size: toRem(36);
+            text-align: left;
+            margin-bottom: toRem(32);
+        }
+    }
+    .swiper{
+        padding-bottom: toRem(30);
+
+        &-wrapper{
+            @include lgMinBreakPoint {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &-slide{
+            @include lgMinBreakPoint {
+                min-width: toRem(310) !important;
+                width: 31% !important;
+                margin: toRem(8);
+                max-width: toRem(420);
+            }
+        }
+
+        &-pagination-bullet{
+            height: toRem(15);
+            width: toRem(15);
+            border: 1px solid white;
+            opacity: 1; 
+            background-color: transparent;
+    
+            &-active{
+                background-color: white;
+            }
+        }
+
+        &-button-prev{
+            position: absolute;
+            top: unset;
+            bottom: -3px;
+            color: white;
+            left: calc(100vw/2 - toRem(135));
+            z-index: 11;
+    
+            &:after{
+                font-size: toRem(25);
+            }
+
+            @include mdMinBreakPoint {
+                left: calc(100vw/2 - toRem(115));
+            }
+        }
+
+        &-button-next{
+            position: absolute;
+            top: unset;
+            bottom: -3px;
+            color: white;
+            right: calc(100vw/2 - toRem(135));
+            z-index: 11;
+    
+            &:after{
+                font-size: toRem(25);
+            }
+
+            @include mdMinBreakPoint {
+                right: calc(100vw/2 - toRem(115));
+            }
+        }
+    }
+}

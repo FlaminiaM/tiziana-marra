@@ -1,0 +1,67 @@
+@use '../../../globalStyles/mixins' as *;
+@use '../../../globalStyles/functions' as *;
+@use '../../../globalStyles/variables' as *;
+
+.service-card{
+    background-color: white;
+    padding: toRem(24);
+    border-radius: toRem(8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: toRem(16);
+
+    @include lgMinBreakPoint {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    @include mdMinBreakPoint {
+        font-size: toRem(24);
+    }
+
+    &-roundel{
+        width: toRem(60);
+        height: toRem(60);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+
+        @include mdMinBreakPoint {
+            width: toRem(80);
+            height: toRem(80);
+        }
+    }
+
+    & h3{
+        font-weight: 500;
+        margin-top: toRem(16);
+        margin-bottom: toRem(16);
+        font-size: toRem(18);
+
+        @include mdMinBreakPoint {
+            font-size: toRem(24);
+        }
+    }
+
+    &-text{
+        font-size: toRem(14);
+        color: $lightestBlue;
+        margin-bottom: toRem(16);
+        min-height: toRem(120);
+
+        @include mdMinBreakPoint {
+            min-height: toRem(80);
+        }
+    }
+
+    & .btn{
+        font-size: toRem(16);
+
+        @include lgMinBreakPoint {
+            margin-left: auto;
+        }
+    }
+}

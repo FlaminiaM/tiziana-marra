@@ -25,7 +25,7 @@
         border: 2px solid $blue;
         color: $blue;
         border-radius: toRem(8);
-
+        padding: toRem(8) toRem(32);
         &:hover{
             background-color: $blue;
             color: $white;
