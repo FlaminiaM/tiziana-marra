@@ -1,3 +1,30 @@
 @use '../../../globalStyles/mixins' as *;
 @use '../../../globalStyles/functions' as *;
 @use '../../../globalStyles/variables' as *;
+
+.contact-card{
+    width: toRem(314);
+    border-radius: toRem(8);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: toRem(32) toRem(16);
+    
+    &-icon{
+        width: toRem(40);
+        
+        
+        svg{
+            fill: $blue;
+        }
+    }
+
+    &-title{
+        margin: toRem(16) toRem(0);
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+}
