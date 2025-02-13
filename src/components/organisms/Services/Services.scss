@@ -2,6 +2,12 @@
 @use '../../../globalStyles/mixins' as *;
 .services{
     padding: toRem(16);
+
+    @include lgMinBreakPoint {
+        max-width: toRem(1495);
+        margin-left: auto;
+        margin-right: auto;
+    }
     .swiper{
         padding-bottom: toRem(30);
 
