@@ -25,15 +25,25 @@
                 display: none;
             }
         }
+
+        .container{
+            @include lgMinBreakPoint {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
     }
     &-container{
         display: flex;
         box-shadow: 0px toRem(1) toRem(6) rgba(0,0,0,0.2);
         padding: toRem(8) toRem(16);
         justify-content: space-between;
+        width: 100%;
         align-items: center;
         @include lgMinBreakPoint {
             box-shadow: none;
+            width: auto;
         }
     }
     &-menu{

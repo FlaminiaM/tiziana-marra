@@ -10,19 +10,21 @@ function NavigationMenu({}) {
     const [isOpen, setOpen] = React.useState(false)
     return (
         <div className='navigation-wrapper'>
-            <div className='navigation-container'>
-                <Hamburger toggled={isOpen} toggle={setOpen} />
-                <Logo />
-            </div>
-            <div className={isOpen ? 'navigation-menu navigation-menu--open' : 'navigation-menu'}>
-                <div className='navigation-menu-inner'>
-                    <NavigationItem text='Home' isSelected={true}/>
-                    <NavigationItem text='Trattamenti'/>
-                    <NavigationItem text='Chi sono'/>
-                    <NavigationItem text='Dove trovarmi'/>
+            <div className='container'>
+                <div className='navigation-container'>
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                    <Logo />
                 </div>
+                <div className={isOpen ? 'navigation-menu navigation-menu--open' : 'navigation-menu'}>
+                    <div className='navigation-menu-inner'>
+                        <NavigationItem text='Home' isSelected={true}/>
+                        <NavigationItem text='Trattamenti'/>
+                        <NavigationItem text='Chi sono'/>
+                        <NavigationItem text='Dove trovarmi'/>
+                    </div>
+                </div>
+                <Button type="primary" text='Prendi appuntamento' />
             </div>
-            <Button type="primary" text='Prendi appuntamento' />
        </div>
     )
 

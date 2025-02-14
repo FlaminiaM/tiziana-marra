@@ -12,19 +12,11 @@ function App() {
 
   return (
     <>
-
       <NavigationMenu />
       <HeroBanner />
       <Trattamenti />
       <AboutMe />
       <ContactCard title="Telefono" text='375 7876363'/>
-{/* 
-    
-      <Button type='primary' text='Scopri come posso aiutarti'/>
-      <Button type='secondary' text='Scopri di piu'/>
-      <Button type='tertiary' text='Prendi appuntamento'/> */}
-
-
     </>
   )
 }

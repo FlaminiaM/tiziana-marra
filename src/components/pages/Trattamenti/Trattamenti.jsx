@@ -7,8 +7,10 @@ function Trattamenti() {
 
     return (
        <div className='trattamenti'>
-            <SectionTitle type='white' text='Trattamenti'/>
-            <Services />
+            <div className='container'>
+                <SectionTitle type='white' text='Trattamenti'/>
+                <Services />
+            </div>
        </div>
     )
 

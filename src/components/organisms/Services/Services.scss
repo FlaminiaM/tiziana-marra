@@ -1,7 +1,6 @@
 @use '../../../globalStyles/functions' as *;
 @use '../../../globalStyles/mixins' as *;
 .services{
-    padding: toRem(16);
 
     @include lgMinBreakPoint {
         max-width: toRem(1495);
