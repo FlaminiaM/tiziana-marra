@@ -1,0 +1,46 @@
+@use '../../../globalStyles/mixins' as *;
+@use '../../../globalStyles/functions' as *;
+@use '../../../globalStyles/variables' as *;
+
+
+.contacts{
+    background-color: $blue;
+    padding: toRem(16);
+
+    @include mdMinBreakPoint {
+        padding: toRem(48);
+    }
+
+    &-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include lgMinBreakPoint {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        @include lgMinBreakPoint {
+            display: block;
+        }
+    }
+
+    &-map{
+        width: 100%;
+        margin-bottom: toRem(32);
+        @include lgMinBreakPoint {
+            width: 50%;
+        }
+        iframe{
+            width: 100%;
+            height: toRem(450);
+        }
+    }
+}

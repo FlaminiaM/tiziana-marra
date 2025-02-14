@@ -10,21 +10,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: toRem(32) toRem(16);
+    padding: toRem(16) toRem(16);
+    text-align: center;
+    margin-bottom: toRem(16);
+
+    @include mdMinBreakPoint {
+        padding: toRem(32) toRem(16);
+    }
     
     &-icon{
-        width: toRem(40);
-        
+        height: toRem(20);
+        width: toRem(20);
+
+        @include mdMinBreakPoint {
+            height: toRem(40);
+            width: toRem(40);
+        }
         
         svg{
             fill: $blue;
+            height: toRem(20);
+            width: toRem(20);
+
+
+            @include mdMinBreakPoint {
+                height: toRem(40);
+                width: toRem(40);
+            }
         }
     }
 
     &-title{
         margin: toRem(16) toRem(0);
-        font-size: 24px;
+        font-size: toRem(16);
         font-weight: 500;
+        @include mdMinBreakPoint {
+            font-size: toRem(24);
+        }
     }
 
 }

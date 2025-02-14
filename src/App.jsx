@@ -5,7 +5,7 @@ import NavigationMenu from './components/molecules/NavigationMenu/NavigationMenu
 import HeroBanner from './components/molecules/HeroBanner/HeroBanner.jsx'
 import Trattamenti from './components/pages/Trattamenti/Trattamenti.jsx'
 import AboutMe from './components/pages/AboutMe/AboutMe.jsx'
-import ContactCard from './components/molecules/ContactCard/ContactCard.jsx';
+import Contatti from './components/pages/Contatti/Contatti.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +16,7 @@ function App() {
       <HeroBanner />
       <Trattamenti />
       <AboutMe />
-      <ContactCard title="Telefono" text='375 7876363'/>
+      <Contatti />
     </>
   )
 }
