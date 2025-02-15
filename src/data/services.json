@@ -7,19 +7,19 @@
     },
     {
         "id": "massaggi",
-        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739624982/massage_jw0his.jpg",
         "title":  "Massaggi",
         "text": "Utilizzati per alleviare dolore, ridurre tensioni muscolari, migliorare la circolazione e favorire il recupero da traumi e patologie articolari."
     },
     {
         "id": "tecarTerapia",
-        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739625085/tecar_vkzrwb.jpg",
         "title":  "Tecar Terapia",
         "text": "Stimola la guarigione dei tessuti attraverso energia elettromagnetica, riducendo dolore, infiammazione e accelerando il recupero muscolare."
     },
     {
         "id": "riabilitazione",
-        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739271010/laserterapia_mve4if.jpg",
+        "imageUrl": "https://res.cloudinary.com/de2x5mgq7/image/upload/v1739625158/riabilitazione_ozfqlw.jpg",
         "title":  "Riabilitazione",
         "text": "Processo di recupero della funzionalita’ motoria e delal qualita’ di vita attraverso terapie mirate, esercizi e tecniche manuali."
     },
