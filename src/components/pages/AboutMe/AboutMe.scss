@@ -2,6 +2,10 @@
 @use '../../../globalStyles/mixins' as *;
 @use '../../../globalStyles/functions' as *;
 
+#about{
+    scroll-margin: 120px;
+}
+
 .about-me{
     margin: toRem(24);
     @include mdMinBreakPoint {

@@ -2,7 +2,9 @@
 @use '../../../globalStyles/functions' as *;
 @use '../../../globalStyles/variables' as *;
 
-
+#contacts{
+    scroll-margin: 100px;
+}
 .contacts{
     background-color: $blue;
     padding: toRem(16);

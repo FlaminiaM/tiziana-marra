@@ -1,10 +1,10 @@
 import './NavigationItem.scss';
 
 
-function NavigationItem({text, isSelected}) {
+function NavigationItem({text, id, activeId, navClickHandler}) {
     return (
-        <li className={isSelected ? 'navigation-item navigation-item--selected' : 'navigation-item'}>
-            {text}
+        <li scrolltoel={id} className={id === activeId ? 'navigation-item navigation-item--selected' : 'navigation-item'} onClick={(e) => navClickHandler(e)}>
+          {text}
         </li>
     )
 

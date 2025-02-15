@@ -9,7 +9,6 @@ import { Navigation, Pagination} from 'swiper/modules';
 
 
 function Services() {
-    console.log("services", services)
     return (
         <div className='services'>
             <Swiper
