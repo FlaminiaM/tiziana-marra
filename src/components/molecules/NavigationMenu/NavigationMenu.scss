@@ -6,12 +6,24 @@
         display: block;
         box-shadow: none;
         position: relative;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 11;
+        top: 0;
         @include lgMinBreakPoint {
             display: flex;
             align-items: center;
             justify-content: space-around;
             box-shadow: 0px toRem(1) toRem(6) rgba(0,0,0,0.2);
             padding: toRem(20) toRem(24);
+            position: fixed;
+            top: 0;
+            height: 107px;
+        }
+
+        a{
+            text-decoration: none;
         }
 
         & .btn{

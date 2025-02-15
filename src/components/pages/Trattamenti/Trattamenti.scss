@@ -2,6 +2,10 @@
 @use '../../../globalStyles/mixins' as *;
 @use '../../../globalStyles/functions' as *;
 
+#treatments{
+    scroll-margin: 100px;
+}
+
 .trattamenti{
     background-color: $blue;
     padding: toRem(16);

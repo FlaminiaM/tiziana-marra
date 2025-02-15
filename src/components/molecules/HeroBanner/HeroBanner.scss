@@ -1,6 +1,13 @@
 @use '../../../globalStyles/mixins' as *;
 @use '../../../globalStyles/functions' as *;
 @use '../../../globalStyles/variables' as *;
+
+#home{
+    padding-top: toRem(67);
+    @include lgMinBreakPoint {
+        padding-top: toRem(107);
+    }
+}
 .hero-banner{
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +55,8 @@
         align-items: center;
         justify-content: center;
         padding: 16px;
+        z-index: 2;
+        position: relative;
 
         @include lgMinBreakPoint {
             text-align: left;

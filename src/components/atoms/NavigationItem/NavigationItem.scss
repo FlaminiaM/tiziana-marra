@@ -6,6 +6,9 @@
     list-style: none;
     padding: toRem(10) 0;
     width: fit-content;
+    text-decoration: none;
+    color: $darkBlue;
+    cursor: pointer;
 
     @include lgMinBreakPoint {
         margin: toRem(8) toRem(16);
@@ -14,7 +17,7 @@
     &--selected{
         color: $lightBlue;
         border-bottom: toRem(4) solid $lightBlue;
-        padding-bottom: toRem(3);
-        margin-bottom: toRem(7);
+        // padding-bottom: toRem(3);
+        // margin-bottom: toRem(7);
     }
 }
