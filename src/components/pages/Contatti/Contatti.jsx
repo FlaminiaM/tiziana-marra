@@ -17,7 +17,7 @@ function Contatti() {
         {
             "icon": <PhoneIcon />,
             "title": "Telefono",
-            "text": "375 7876363"
+            "text": "347 5390548"
         },
         {
             "icon": <HomeIcon />,
